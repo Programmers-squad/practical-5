@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>capitals of countries</title>
+<style>
+p{
+color:fuchsia;
+font-weight:bold;
+font-size:50;
+}
+</style>
+<script language="javascript">
+function capital()
+{
+var cunt=document.forms["P5"].country.value; 
+var capital=" Please select any country ";
+if( cunt=="india")
+{
+capital="NEW DELHI";
+}
+if( cunt=="china")
+{
+capital="BEIJING";
+}
+if( cunt=="pakistan")
+{
+capital="ISLAMABAD";
+}
+if( cunt=="bangladesh")
+{
+capital="DHAKA";
+}
+if( cunt=="japan")
+{
+capital="TOKYO";
+}
+
+if( cunt=="select")
+{
+capital="Please select any country";
+}
+
+
+document.getElementById("capt").innerHTML=capital;
+}
+</script>
+</head>
+<body>
+<form name="P5">
+<br/>
+<center>
+    <h1>Select Form</h1>
+    Select a Country : <select name="country">
+    <option value="select">--SELECT--</option>
+    <option value="india">INDIA</option>
+    <option value="china">CHINA</option>
+    <option value="pakistan">PAKISTAN</option>
+    <option value="bangladesh">BANGLADESH</option>
+    <option value="japan">JAPAN</option>
+    </select>
+</center>
+<br/>
+<br/>
+<!-- <button class="button button1" type="button" onlick="alert('submitted successfully')">submit</button> -->
+<h3>Click on the below Submit Button</h3>
+
+<button onclick="capital()" type="button">Submit</button>
+<br>
+
+<h3 style="display:inline-block;"><font color="black" size="4">Capital is :</font></h3><p id="capt"></p>
+<!-- <button type="button" onclick="my_button_click_handler">Click this button</button> -->
+<!-- <script>
+function my_button_click_handler()
+{
+alert('Button Clcked');
+}
+</script>
+<br>
+<br>
+
+<font color="green" size="10">Capital is :</font> <p id="capt"></p> -->
+</center>
+</form>
+</body>
+</html>
